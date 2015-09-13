@@ -1,7 +1,7 @@
 # Dockerfile to build a docker runtime for Java applications
 # by Thanh Nguyen <btnguyen2k@gmail.com>
 
-FROM ubuntu:latest
+FROM ubuntu:14.04
 MAINTAINER Thanh Nguyen <btnguyen2k@gmail.com>
 
 # Minimum OracleJDK-8 for server applications
