@@ -1,9 +1,5 @@
-# Dockerfile to build a docker runtime for Java applications
+# Dockerfile to build a minimum Java runtime for Java applications
 # by Thanh Nguyen <btnguyen2k@gmail.com>
-
-# History:
-# - 2015-09-13: better version, automatically download Oracle JRE with wget
-# - 2015-09-11: first, quick-and-dirty version
 
 FROM ubuntu:14.04
 MAINTAINER Thanh Nguyen <btnguyen2k@gmail.com>
@@ -15,7 +11,7 @@ ENV JAVA_VERSION_BUILD 27
 ENV JAVA_PACKAGE       jre
 ENV JAVA_OUTPUT_DIR    ${JAVA_PACKAGE}1.${JAVA_VERSION_MAJOR}.0_${JAVA_VERSION_MINOR}
 
-# Download & Extract Oracle java
+# Download & Extract Oracle Java
 # Ref: http://stackoverflow.com/questions/10268583/downloading-java-jdk-on-linux-via-wget-is-shown-license-page-instead
 RUN \
 	mkdir -p /tmp && \
