@@ -23,5 +23,4 @@ RUN \
 	ln -s /usr/local/java/bin/* /usr/local/bin/
 
 ENV JAVA_HOME /usr/local/java
-CMD ["java", "-version"]
 
