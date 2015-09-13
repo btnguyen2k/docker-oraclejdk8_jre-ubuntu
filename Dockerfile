@@ -1,6 +1,10 @@
 # Dockerfile to build a docker runtime for Java applications
 # by Thanh Nguyen <btnguyen2k@gmail.com>
 
+# History:
+# - 2015-09-13: better version, automatically download Oracle JRE with wget
+# - 2015-09-11: first, quick-and-dirty version
+
 FROM ubuntu:14.04
 MAINTAINER Thanh Nguyen <btnguyen2k@gmail.com>
 
